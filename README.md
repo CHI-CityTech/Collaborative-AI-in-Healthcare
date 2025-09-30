@@ -1,133 +1,161 @@
-# CHI Student Research Template
+# [Project Title]
 
-> **This is a GitHub repository template for CHI (Center for Holistic Integration) student research projects**  
-> **Click "Use this template" at the bottom of this README to create your own research repository**
+<!-- Replace [Project Title] with your actual research project name -->
 
-[![GitHub Template](https://img.shields.io/badge/GitHub-Template-green)](https://github.com/CHI-CityTech/CHI-Research-Template)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Project Overview
 
-## What This Template Provides
+**Research Focus**: [Brief description of your research question or project goals]
 
-### CHI Research Methodology Framework
-- **SRDMPA Cycle**: Speculate → Research → Design → Make → Publish → Assess
-- **Issue Templates**: Milestone, Research Log, AI Collaboration Report, Bug Report
-- **Labels**: Complete SRDMPA phase labels plus activity types
-- **Collaborative AI Integration**: Built-in tracking and evaluation templates
+**CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
+- [ ] META-Balanced-Blended-Space
+- [ ] META-Blended-Shadow-Puppet  
+- [ ] META-Collaborative-AI
+- [ ] META-International-Collaboration
+- [ ] META-Cultural-Popup-Experiences
+- [ ] META-Blended-Reality-Performance-System
+- [ ] Other: [Specify]
 
-### Project Management Tools
-- **Automatic Kanban Board**: Backlog → In Progress → In Review → Done
-- **GitHub Actions**: Label sync, project board automation, markdown linting
-- **Meta-Project Integration**: Links to CHI's 9 active research initiatives
-- **Academic Standards**: Citation file, license, code of conduct
+**Current SRDMPA Phase**: [Select current phase]
+- [ ] **Speculate** - Forming research questions and hypotheses
+- [ ] **Research** - Literature review and background investigation
+- [ ] **Design** - Planning methodology and approach
+- [ ] **Make** - Implementing, building, or conducting research
+- [ ] **Publish** - Documenting and sharing results
+- [ ] **Assess** - Evaluating outcomes and planning next steps
 
-### Development Environment
-- **VS Code Integration**: Recommended extensions and workspace settings
-- **Documentation Structure**: Research notes, methodology templates
-- **Data Management**: Organized directories with clear provenance
-- **Git Configuration**: Appropriate ignore rules and LFS setup
+## 🚀 Quick Setup (Complete These Steps First)
 
-## CHI Meta-Projects (Connect Your Work)
+### 1. Set Up Project Board
+1. **Go to Projects tab** → **New project**
+2. **Select "CHI Research Template"** from organization templates (if available)
+   - OR manually create **Board layout** with columns: Backlog → In Progress → In Review → Done
+3. **Name**: `[Your Project Name] Research Progress`
+4. **Link this repository** to the project
 
-This template supports research within CHI's active meta-projects:
+### 2. Update This README
+- [ ] Replace `[Project Title]` with your actual project name
+- [ ] Fill in your research focus and goals
+- [ ] Select your CHI meta-project connections
+- [ ] Choose your current SRDMPA phase
 
-1. **Balanced Blended Space (BBS)** - Framework for human-AI collaboration
-2. **Built Environment (BE)** - Architecture, engineering, climate integration
-3. **Blended Shadow Puppet (BSP)** - Performative and narrative research
-4. **Collaborative AI** - AI as research partner methodology
-5. **Holistic STEM Education** - Contemplative creativity in inquiry
-6. **International Collaboration** - Austria-City Tech partnership
-7. **Cultural Popup Dining Experience** - Interdisciplinary storytelling
-8. **Combinative Reality** - Physical/digital learning environments
-9. **UNESCO World-Building** - Heritage transformation research
+### 3. Create First Issues
+- [ ] **Milestone Issue**: Define your first major deliverable using the Milestone template
+- [ ] **Research Log Issue**: Start weekly progress tracking using Research Log template
+- [ ] **Label appropriately**: Use `01-speculate` through `06-assess` plus `activity-*` labels
 
-*Full descriptions available in [`references/meta-projects.md`](references/meta-projects.md)*
-
-## Repository Structure
-
-```
-CHI-Research-Template/
-├── README.md                    # This template overview
-├── docs/
-│   ├── researcher-setup.md      # Post-template setup guide
-│   ├── repository-structure.md  # Detailed file explanations
-│   └── research-notes/          # Weekly research logs
-├── .github/
-│   ├── ISSUE_TEMPLATE/          # CHI methodology templates
-│   ├── workflows/               # Automated project management
-│   └── labels.yml              # SRDMPA phase labels
-├── data/                       # Research data organization
-├── src/                        # Source code
-├── notebooks/                  # Jupyter analysis notebooks
-├── references/                 # CHI framework connections
-├── CITATION.cff                # Academic citation format
-└── [standard project files]
-```
-
-## Getting Started
-
-### For Students/Researchers
-
-1. **Click "Use this template"** (green button above)
-2. **⚠️ IMPORTANT**: In Owner dropdown, select **CHI-CityTech** (not your personal account)
-3. **Name your repository**: `student-[lastname]-[project-name]`
-4. **Set to Private** during research phase (make public when ready to share)
-5. **Follow the setup guide**: [`docs/setup/researcher-setup.md`](docs/setup/researcher-setup.md)
-6. **Connect to meta-project**: Link your work to CHI initiatives
-
-> **Don't see CHI-CityTech in the Owner dropdown?** Contact CHI administrators to be added to the organization first.
-
-### For Administrators
-
-- **Template Maintenance**: See [`docs/repository-structure.md`](docs/repository-structure.md)
-- **CHI Framework Updates**: Modify [`references/meta-projects.md`](references/meta-projects.md)
-- **Workflow Customization**: Update `.github/workflows/` as needed
-
-## CHI Philosophy Integration
-
-This template embodies CHI's core principles:
-
-- **Holism**: Welcomes all disciplines meaningfully
-- **Inclusivity**: Respects diverse outputs and approaches
-- **Integration as Endpoint**: Meta-integration is the goal, not just means
-- **Collaborative AI**: AI as partner, not tool
-- **SRDMPA Methodology**: Structured research progression
-- **Academic Standards**: Proper citation and reproducibility
-
-## Template Features
-
-### Automatic Project Board
-- **Kanban columns** manage workflow states
-- **Issue integration** automatically moves cards
-- **Research phases** tracked via CHI labels
-
-### Issue Templates
-- **Milestone**: Define concrete deliverables with acceptance criteria  
-- **Research Log**: Weekly SRDMPA phase documentation
-- **AI Collaboration Report**: Track and evaluate AI partnership
-- **Bug Report**: Standard technical issue reporting
-
-### GitHub Actions
-- **Label Sync**: Maintains consistent CHI labels
-- **Project Board Automation**: Moves issues through workflow
-- **Meta-Project Integration**: Links completed work to CHI initiatives
-- **Markdown Linting**: Ensures documentation quality
-
-## Support and Documentation
-
-- **Researcher Setup**: [`docs/setup/researcher-setup.md`](docs/setup/researcher-setup.md)
-- **Repository Guide**: [`docs/repository-structure.md`](docs/repository-structure.md)  
-- **Project Board Setup**: [`docs/setup/`](docs/setup/) - Templates and instructions for GitHub Project Boards
-- **CHI Meta-Projects**: [`references/meta-projects.md`](references/meta-projects.md)
-- **Issue Templates**: Use GitHub Issues → New Issue
-
-## License and Citation
-
-This template is available under the MIT License. Individual student projects created from this template inherit the license but should update the `CITATION.cff` file with their specific project information.
-
-## Contributing to the Template
-
-Template improvements should be submitted as pull requests to `CHI-CityTech/CHI-Research-Template`. For individual research projects, follow the contribution guidelines in your project repository.
+### 4. Follow Detailed Setup
+See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configuration guide.
 
 ---
 
-**Ready to start your CHI research project?** → **[Use this template](../../generate)** ← Click here!
+## Project Overview
+
+**Research Focus**: [Brief description of your research question or project goals]
+
+**CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
+- [ ] META-Balanced-Blended-Space
+- [ ] META-Blended-Shadow-Puppet  
+- [ ] META-Collaborative-AI
+- [ ] META-International-Collaboration
+- [ ] META-Cultural-Popup-Experiences
+- [ ] META-Blended-Reality-Performance-System
+- [ ] Other: [Specify]
+
+**Current SRDMPA Phase**: [Select current phase]
+- [ ] **01-Speculate** - Forming research questions and hypotheses
+- [ ] **02-Research** - Literature review and background investigation
+- [ ] **03-Design** - Planning methodology and approach
+- [ ] **04-Make** - Implementing, building, or conducting research
+- [ ] **05-Publish** - Documenting and sharing results
+- [ ] **06-Assess** - Evaluating outcomes and planning next steps
+
+## Getting Started
+
+### Prerequisites
+- [List any software, hardware, or knowledge requirements]
+- [Include setup instructions for specialized tools]
+
+### Getting Started
+1. **Clone this repository** and follow setup in `docs/researcher-setup.md`
+2. **Review project structure** in `docs/repository-structure.md`
+3. **Create your first milestone** using the Milestone issue template
+4. **Start research logging** with weekly Research Log issues
+
+### Key Files to Update
+- [ ] **This README**: Replace placeholders with your project details
+- [ ] **CITATION.cff**: Update with your project information
+- [ ] **docs/research-notes/**: Add your initial research questions
+- [ ] **references/meta-projects.md**: Link to relevant CHI meta-projects
+
+## Research Progress
+
+### Current Milestones
+[Use GitHub Issues with Milestone template to track major deliverables]
+
+### Recent Activity
+[Use Research Log issues to document weekly progress]
+
+### AI Collaboration
+[Use AI Collaboration Report issues to track and evaluate AI tool usage]
+
+## Data and Analysis
+
+### Data Sources
+[Describe your data sources, collection methods, or experimental setup]
+
+### Key Findings
+[Update as your research progresses - link to notebooks, papers, or presentations]
+
+### Reproducibility
+[Instructions for reproducing your analysis - reference specific notebooks or scripts]
+
+## Repository Structure
+
+- **`data/`** - Research datasets (raw and processed)
+- **`src/`** - Source code and analysis functions
+- **`notebooks/`** - Jupyter notebooks organized by research phase
+- **`docs/`** - Documentation and research notes
+- **`references/`** - Literature, citations, and external resources
+- **`assets/`** - Figures, presentations, and media files
+
+For detailed explanations, see `docs/repository-structure.md`.
+
+## Contributing
+
+### For Collaborators
+[Instructions for team members joining the project]
+
+### For External Contributors
+See `CONTRIBUTING.md` for guidelines on contributing to this research project.
+
+## Citation
+
+If you use or reference this work, please cite:
+
+```bibtex
+[Your CITATION.cff file will generate the appropriate citation format]
+```
+
+See `CITATION.cff` for complete citation information.
+
+## License
+
+[Specify your license - update LICENSE file accordingly]
+
+## Contact
+
+**Researcher**: [Your name and contact information]  
+**Institution**: City University of New York - New York City College of Technology  
+**CHI Affiliation**: [Your role in the Center for Holistic Integration]  
+**Advisor/Supervisor**: [If applicable]
+
+## Acknowledgments
+
+- **CHI Community** - Center for Holistic Integration research ecosystem
+- **Meta-Project Leaders** - [Acknowledge relevant meta-project coordinators]
+- **AI Collaboration** - [Acknowledge AI tools used and their contribution]
+- **Funding/Support** - [Acknowledge grants, institutions, or other support]
+
+---
+
+*This repository was created using the [CHI Research Template](https://github.com/CHI-CityTech/CHI-Research-Template) and follows CHI research methodology and standards.*
