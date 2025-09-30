@@ -1,0 +1,17 @@
+🔧 SETUP: Configure Your Research Project Board
+
+🚨 This is a template project board. You need to customize it for your research.
+
+QUICK SETUP STEPS:
+□ Follow the complete setup guide: 
+  https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/project-board-instructions.md
+
+□ Copy the project board README:
+  https://github.com/CHI-CityTech/CHI-Research-Template/blob/main/docs/setup/project-board-README.md
+
+□ Create your first real research issues using CHI issue templates:
+  https://github.com/CHI-CityTech/CHI-Research-Template/tree/main/.github/ISSUE_TEMPLATE
+
+□ Move this card to Done when setup is complete (or delete it)
+
+Need help? Check the documentation links above or contact CHI faculty advisors.

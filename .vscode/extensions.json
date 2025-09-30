@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "github.copilot",
+        "eamodio.gitlens",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ]
+}

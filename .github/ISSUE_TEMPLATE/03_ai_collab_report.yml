@@ -1,0 +1,35 @@
+name: AI Collaboration Report
+description: Document AI tool usage and contributions to your research project
+title: "AI Collab: <short>"
+labels: ["ai-collaboration"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Research Phase
+      description: Which SRDMPA phase was AI supporting?
+      options:
+        - 01-speculate
+        - 02-research
+        - 03-design
+        - 04-make
+        - 05-publish
+        - 06-assess
+    validations:
+      required: false
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompts / Tasks given to AI
+  - type: textarea
+    id: output
+    attributes:
+      label: AI Output Summary
+  - type: textarea
+    id: eval
+    attributes:
+      label: Your Evaluation (accuracy, bias, limits)
+  - type: textarea
+    id: integration
+    attributes:
+      label: What was accepted, modified, or rejected?

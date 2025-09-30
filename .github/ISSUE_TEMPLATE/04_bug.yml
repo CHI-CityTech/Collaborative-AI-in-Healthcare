@@ -1,0 +1,17 @@
+name: Bug Report
+description: Technical issues, debugging tasks, or things that aren't working in your research
+title: "Bug: <short description>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce

@@ -1,0 +1,110 @@
+name: Project Board Automation
+on:
+  issues:
+    types: [opened, closed, reopened]
+  pull_request:
+    types: [opened, closed, reopened, ready_for_review, converted_to_draft]
+
+jobs:
+  update-project-board:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move cards based on issue/PR state
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Get all project boards for this repo
+            const projects = await github.rest.projects.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+
+            if (projects.data.length === 0) return;
+            
+            // Use the first project (or find "Research Progress")
+            const project = projects.data.find(p => p.name === "Research Progress") || projects.data[0];
+            
+            // Get project columns
+            const columns = await github.rest.projects.listColumns({
+              project_id: project.id
+            });
+
+            const columnMap = {};
+            columns.data.forEach(col => {
+              columnMap[col.name.toLowerCase()] = col.id;
+            });
+
+            let targetColumn = null;
+            let cardNote = null;
+
+            // Determine target column based on event
+            if (context.eventName === 'issues') {
+              const issue = context.payload.issue;
+              
+              if (context.payload.action === 'opened') {
+                targetColumn = columnMap['backlog'];
+                cardNote = `Issue #${issue.number}: ${issue.title}`;
+                
+                // Create new card for new issues
+                if (targetColumn) {
+                  await github.rest.projects.createCard({
+                    column_id: targetColumn,
+                    content_id: issue.id,
+                    content_type: 'Issue'
+                  });
+                }
+                return;
+              }
+              
+              if (context.payload.action === 'closed') {
+                targetColumn = columnMap['done'];
+              } else if (context.payload.action === 'reopened') {
+                targetColumn = columnMap['backlog'];
+              }
+              
+              // Find existing card for this issue
+              const issueCard = await findCardForIssue(project.id, issue.id);
+              if (issueCard && targetColumn) {
+                await github.rest.projects.moveCard({
+                  card_id: issueCard.id,
+                  position: 'bottom',
+                  column_id: targetColumn
+                });
+              }
+            }
+            
+            if (context.eventName === 'pull_request') {
+              const pr = context.payload.pull_request;
+              
+              if (context.payload.action === 'opened') {
+                targetColumn = columnMap['in progress'];
+              } else if (context.payload.action === 'ready_for_review') {
+                targetColumn = columnMap['in review'];
+              } else if (context.payload.action === 'converted_to_draft') {
+                targetColumn = columnMap['in progress'];
+              } else if (context.payload.action === 'closed') {
+                targetColumn = pr.merged ? columnMap['done'] : columnMap['backlog'];
+              }
+              
+              // Handle PR cards (create if new, move if exists)
+              if (context.payload.action === 'opened' && targetColumn) {
+                await github.rest.projects.createCard({
+                  column_id: targetColumn,
+                  content_id: pr.id,
+                  content_type: 'PullRequest'
+                });
+              }
+            }
+
+            async function findCardForIssue(projectId, issueId) {
+              const columns = await github.rest.projects.listColumns({ project_id: projectId });
+              
+              for (const column of columns.data) {
+                const cards = await github.rest.projects.listCards({ column_id: column.id });
+                const card = cards.data.find(card => 
+                  card.content_url && card.content_url.includes(`/issues/${context.payload.issue.number}`)
+                );
+                if (card) return card;
+              }
+              return null;
+            }

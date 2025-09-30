@@ -1,0 +1,31 @@
+name: Research Log
+description: Weekly progress tracking and reflection for CHI research methodology
+title: "Research Log: <YYYY-WW>"
+labels: ["research-log"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Primary Phase This Week
+      description: Which SRDMPA phase was your main focus?
+      options:
+        - 01-speculate
+        - 02-research
+        - 03-design
+        - 04-make
+        - 05-publish
+        - 06-assess
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of Work
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources (Zotero links, DOIs, URLs)
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Decisions & Next Steps

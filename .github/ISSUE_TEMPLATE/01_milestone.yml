@@ -1,0 +1,42 @@
+name: Milestone
+description: Define a concrete deliverable and acceptance criteria for your research project
+title: "Milestone: <short name>"
+labels: ["milestone"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Primary SRDMPA Phase
+      description: Which research phase does this milestone primarily support?
+      options:
+        - 01-speculate
+        - 02-research
+        - 03-design
+        - 04-make
+        - 05-publish
+        - 06-assess
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What will exist when done?
+      placeholder: "Sensor A → data stream parsed → single audio transform"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: "- [ ] parse stream\n- [ ] visualize\n- [ ] demo works on sample"
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: Due Date (YYYY-MM-DD)
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Mitigations

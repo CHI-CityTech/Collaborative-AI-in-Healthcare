@@ -1,0 +1,103 @@
+name: Setup Project Board
+on:
+  push:
+    branches: [ main ]
+  repository_dispatch:
+    types: [setup-project]
+  workflow_dispatch:
+
+jobs:
+  setup-project:
+    runs-on: ubuntu-latest
+    # Don't run in the template repository itself
+    if: github.repository != 'CHI-CityTech/CHI-Research-Template'
+    steps:
+      - name: Check if project already exists
+        id: check-project
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              const { data: projects } = await github.rest.projects.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo
+              });
+              
+              const hasResearchProject = projects.some(p => p.name === "Research Progress");
+              core.setOutput('exists', hasResearchProject);
+              
+              return hasResearchProject;
+            } catch (error) {
+              core.setOutput('exists', false);
+              return false;
+            }
+            
+      - name: Checkout repository
+        if: steps.check-project.outputs.exists == 'false'
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Replace template README with project README
+        if: steps.check-project.outputs.exists == 'false'
+        run: |
+          if [ -f "README.template.md" ]; then
+            echo "Replacing template README with project-specific README"
+            mv README.template.md README.md
+            git config user.name "CHI Template Setup"
+            git config user.email "action@github.com"
+            git add README.md
+            git commit -m "Initialize project README from template" || echo "No changes to commit"
+            git push || echo "Nothing to push"
+            echo "README.md updated for new research project"
+          else
+            echo "No README.template.md found, skipping README replacement"
+          fi
+          
+      - name: Create Project Board
+        if: steps.check-project.outputs.exists == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Note: GitHub has deprecated classic projects API
+            // For now, we'll create an issue with instructions for manual project creation
+            
+            try {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: "🔧 Setup: Create Project Board",
+                body: `## Manual Project Board Setup Required
+
+            GitHub has deprecated the classic Projects API, so we need to create the project board manually.
+
+            ### Steps to Create Your Research Project Board:
+
+            1. **Go to Projects tab** (next to Actions)
+            2. **Click "New project"** 
+            3. **Choose "Board" layout**
+            4. **Name**: Research Progress
+            5. **Add columns**: 
+               - 🆕 **Backlog** (New issues and planned work)
+               - 🟡 **In Progress** (Currently active work) 
+               - 🔵 **In Review** (Work ready for review)
+               - 🟢 **Done** (Completed work)
+
+            ### CHI Research Workflow:
+            - Use **SRDMPA labels** on issues: speculate, research, design, make, publish, assess
+            - Create **Milestone issues** for major deliverables
+            - Create **Research Log issues** weekly to track progress
+            - Move issues through board columns as work progresses
+
+            ### Alternative:
+            You can also link this repository to an existing CHI organization project board.
+
+            *This setup issue will be automatically closed once you create your first project.*`,
+                labels: ['setup', 'project-management']
+              });
+              
+              console.log("Created setup instructions issue for manual project board creation");
+              
+            } catch (error) {
+              console.log("Error creating setup issue:", error.message);
+            }

@@ -1,0 +1,25 @@
+name: Post to Meta Project on Close
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post comment to Meta Project
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const metaRepo = "CHI-CityTech/StudentResearch";
+            const metaIssueNumber = process.env.META_ISSUE_NUMBER || "1";
+            const issue = context.payload.issue;
+            const body = `Closed in **${context.repo.owner}/${context.repo.repo}**: #${issue.number} — "${issue.title}"\n\n${issue.html_url}`;
+            await github.rest.issues.createComment({
+              owner: metaRepo.split('/')[0],
+              repo: metaRepo.split('/')[1],
+              issue_number: Number(metaIssueNumber),
+              body
+            });
+        env:
+          META_ISSUE_NUMBER: "1"  # <-- Set this per-student repo

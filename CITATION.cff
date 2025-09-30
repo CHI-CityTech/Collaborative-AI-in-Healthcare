@@ -1,0 +1,28 @@
+# Citation File Format for CHI Student Research
+# This file tells others how to cite your work academically
+# GitHub will create a "Cite this repository" button using this info
+# Learn more: https://citation-file-format.github.io/
+
+cff-version: 1.2.0
+title: "<Student Project Title>"  # Replace with your actual project title
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: "<Last>"      # Replace with your last name
+    given-names: "<First>"      # Replace with your first name
+    # Optional: add ORCID if you have one
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  # Add additional authors/collaborators as needed:
+  # - family-names: "Advisor"
+  #   given-names: "Name"
+
+# CHI research keywords - customize for your specific project
+keywords: [CHI, BBS, Collaborative AI, Student Research]
+
+license: "MIT"
+
+# Optional fields you may want to add:
+# version: "1.0.0"                    # Project version
+# date-released: "2025-09-24"         # Release date (YYYY-MM-DD)
+# url: "https://github.com/CHI-CityTech/your-repo"  # Repository URL
+# repository-code: "https://github.com/CHI-CityTech/your-repo"
+# doi: "10.5281/zenodo.1234567"       # DOI if you publish on Zenodo
