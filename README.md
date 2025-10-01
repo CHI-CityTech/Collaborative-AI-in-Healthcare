@@ -1,18 +1,23 @@
-# [Collaborative AI in Healthcare]
+# [Project Title]
 
 <!-- Replace [Project Title] with your actual research project name -->
 
 ## Project Overview
 
-**Research Focus**: 
+**Research Focus**: [Brief description of your research question or project goals]
 
 **CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
-- [ ] META-Collaborative-AI  
-
+- [ ] META-Balanced-Blended-Space
+- [ ] META-Blended-Shadow-Puppet  
+- [ ] META-Collaborative-AI
+- [ ] META-International-Collaboration
+- [ ] META-Cultural-Popup-Experiences
+- [ ] META-Blended-Reality-Performance-System
+- [ ] Other: [Specify]
 
 **Current SRDMPA Phase**: [Select current phase]
 - [ ] **Speculate** - Forming research questions and hypotheses
-- [ X] **Research** - Literature review and background investigation
+- [ ] **Research** - Literature review and background investigation
 - [ ] **Design** - Planning methodology and approach
 - [ ] **Make** - Implementing, building, or conducting research
 - [ ] **Publish** - Documenting and sharing results
