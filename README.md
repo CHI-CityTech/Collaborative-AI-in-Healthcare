@@ -1,9 +1,8 @@
-# [Collaborative AI In Healthcare]
+# [Project Title]
 
 <!-- Replace [Project Title] with your actual research project name -->
 
-## Project Overview:
-This study aims to examine how artificial intelligence (AI) is currently being used in healthcare and speculates on how its role may evolve as technology grows more powerful. The goal is not to catalog every exisiting application, but rather to demonstrate represenatative examples of AI in current practice and then imagine how these early forms of collaboration might further themselves into more integrated models of team based healthcare. Through situating AI in the context of HIPAA compliance and patient privacy, this project will highlight both the opportunities AI may afford and also the risks of integrating it into clinical work.
+## Project Overview
 
 **Research Focus**: [Brief description of your research question or project goals]
 
