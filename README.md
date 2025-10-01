@@ -1,4 +1,4 @@
-# [Project Title]
+# Collaborative AI in Healthcare
 
 <!-- Replace [Project Title] with your actual research project name -->
 
@@ -17,7 +17,7 @@
 
 **Current SRDMPA Phase**: [Select current phase]
 - [ ] **Speculate** - Forming research questions and hypotheses
-- [ ] **Research** - Literature review and background investigation
+- [ X] **Research** - Literature review and background investigation
 - [ ] **Design** - Planning methodology and approach
 - [ ] **Make** - Implementing, building, or conducting research
 - [ ] **Publish** - Documenting and sharing results
