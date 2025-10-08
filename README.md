@@ -1,4 +1,4 @@
-# Test
+# [Project Title]
 
 <!-- Replace [Project Title] with your actual research project name -->
 
