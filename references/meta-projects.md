@@ -1,4 +1,4 @@
-# CHI Meta-Projects (Active)
+# CHI Meta-Projects (Active) YES
 
 > Zotero links will be added later by the PI. Use this list in student READMEs.
 
