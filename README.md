@@ -1,4 +1,4 @@
-# Collaborative-AI-in-Healthcare
+# [Project Title]
 
 <!-- Replace [Project Title] with your actual research project name -->
 
