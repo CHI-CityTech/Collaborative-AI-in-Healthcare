@@ -1,23 +1,18 @@
-# [Test 2
+# Collaborative-AI-in-Healthcare
 
 <!-- Replace [Project Title] with your actual research project name -->
 
 ## Project Overview
+This project is speculative but grounded. It will demonstrate how today’s examples of AI in healthcare may foreshadow tomorrow’s collaborative partnerships. By analyzing both past, present, and potential future pratices of AI in Healthcare, the research will help healthcare managers and policy thinkers anticipate how privacy, ethics, and professional practice may need to change accordingly. 
 
-**Research Focus**: [Brief description of your research question or project goals]
+**Research Focus**: This study aims to examine how artificial intelligence (AI) is currently being used in healthcare and speculates on how its role may evolve as technology grows more powerful. The goal is not to catalog every existing application, but rather to demonstrate representative examples of AI in current practice and then imagine how these early forms of collaboration might deepen into more integrated models of team based healthcare. By situating AI within the context of HIPAA compliance and patient privacy, the project highlights both the opportunities and the risks of integrating AI into clinical work. 
 
 **CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
-- [ ] META-Balanced-Blended-Space
-- [ ] META-Blended-Shadow-Puppet  
-- [ ] META-Collaborative-AI
-- [ ] META-International-Collaboration
-- [ ] META-Cultural-Popup-Experiences
-- [ ] META-Blended-Reality-Performance-System
-- [ ] Other: [Specify]
+- [ x] META-Collaborative-AI-in-Healthcare
 
 **Current SRDMPA Phase**: [Select current phase]
 - [ ] **Speculate** - Forming research questions and hypotheses
-- [ ] **Research** - Literature review and background investigation
+- [x ] **Research** - Literature review and background investigation
 - [ ] **Design** - Planning methodology and approach
 - [ ] **Make** - Implementing, building, or conducting research
 - [ ] **Publish** - Documenting and sharing results
@@ -52,14 +47,9 @@ See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configur
 
 **Research Focus**: [Brief description of your research question or project goals]
 
-**CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]
-- [ ] META-Balanced-Blended-Space
-- [ ] META-Blended-Shadow-Puppet  
-- [ ] META-Collaborative-AI
-- [ ] META-International-Collaboration
-- [ ] META-Cultural-Popup-Experiences
-- [ ] META-Blended-Reality-Performance-System
-- [ ] Other: [Specify]
+**CHI Meta-Project Connection**: [List which CHI meta-projects this research contributes to]  
+- [ X] META-Collaborative-AI
+- [ X] Other: [Collaborative-AI-in-Healthcare]
 
 **Current SRDMPA Phase**: [Select current phase]
 - [ ] **01-Speculate** - Forming research questions and hypotheses
@@ -144,10 +134,10 @@ See `CITATION.cff` for complete citation information.
 
 ## Contact
 
-**Researcher**: [Your name and contact information]  
+**Researcher**: [Milsy Pena milsy.pena@mail.citytech.cuny.edu]  
 **Institution**: City University of New York - New York City College of Technology  
 **CHI Affiliation**: [Your role in the Center for Holistic Integration]  
-**Advisor/Supervisor**: [If applicable]
+**Advisor/Supervisor**: [David Smith]
 
 ## Acknowledgments
 
