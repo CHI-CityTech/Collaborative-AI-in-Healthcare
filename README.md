@@ -28,15 +28,15 @@ This project is speculative but grounded. It will demonstrate how today’s exam
 4. **Link this repository** to the project
 
 ### 2. Update This README
-- [ ] Replace `[Project Title]` with your actual project name
-- [ ] Fill in your research focus and goals
-- [ ] Select your CHI meta-project connections
-- [ ] Choose your current SRDMPA phase
+- [X ] Replace `[Project Title]` with your actual project name
+- [ X] Fill in your research focus and goals
+- [X ] Select your CHI meta-project connections
+- [X ] Choose your current SRDMPA phase
 
 ### 3. Create First Issues
-- [ ] **Milestone Issue**: Define your first major deliverable using the Milestone template
-- [ ] **Research Log Issue**: Start weekly progress tracking using Research Log template
-- [ ] **Label appropriately**: Use `01-speculate` through `06-assess` plus `activity-*` labels
+- [X ] **Milestone Issue**: Define your first major deliverable using the Milestone template
+- [ X] **Research Log Issue**: Start weekly progress tracking using Research Log template
+- [X ] **Label appropriately**: Use `01-speculate` through `06-assess` plus `activity-*` labels
 
 ### 4. Follow Detailed Setup
 See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configuration guide.
@@ -72,7 +72,7 @@ See [`docs/researcher-setup.md`](docs/researcher-setup.md) for complete configur
 4. **Start research logging** with weekly Research Log issues
 
 ### Key Files to Update
-- [ ] **This README**: Replace placeholders with your project details
+- [X ] **This README**: Replace placeholders with your project details
 - [ ] **CITATION.cff**: Update with your project information
 - [ ] **docs/research-notes/**: Add your initial research questions
 - [ ] **references/meta-projects.md**: Link to relevant CHI meta-projects
